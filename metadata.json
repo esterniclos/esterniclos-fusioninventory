@@ -1,0 +1,14 @@
+{
+  "name": "esterniclos-fusioninventory",
+  "version": "1.2.1",
+  "author": "esterniclos",
+  "summary": "Installs and configures fusion inventory agents in Debian and Rhel. Required for glpi",
+  "license": "Apache 2.0",
+  "source": "https://github.com/esterniclos/esterniclos-fusioninventory",
+  "project_page": "https://github.com/esterniclos/esterniclos-fusioninventory",
+  "issues_url": "https://github.com/esterniclos/esterniclos-fusioninventory/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
