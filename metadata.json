@@ -8,8 +8,6 @@
     "project_page": "https://github.com/esterniclos/esterniclos-fusioninventory",
     "issues_url": "https://github.com/esterniclos/esterniclos-fusioninventory/issues",
     "operatingsystem_support": [
-	{      "operatingsystemrelease":        "8"
-	},
 	{
 	    "operatingsystem": "Debian",
 	    "operatingsystemrelease": [
