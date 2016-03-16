@@ -1,20 +1,13 @@
-
-
-
 class fusioninventory
-
 (
-  $cronscript_enable = $fusioninventory::params::cronscript_enable,
-  $glpiserver  = $fusioninventory::params::glpiserver
-
+  $cronscript_enable = true,
+  $glpiserver  = 'localhost',
 )
-inherits fusioninventory::params {
-
+{
   include
-  'fusioninventory::install',
-  'fusioninventory::cronscript'
-
-
+  'fusioninventory::install'
   
-
+  if ($cronscript_enable){
+    include   'fusioninventory::cronscript'
+  }
 }

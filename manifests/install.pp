@@ -1,7 +1,9 @@
-class fusioninventory::install inherits fusioninventory {
+class fusioninventory::install
+inherits fusioninventory::params
+{
 
-  package { $package_name:
-    ensure => $package_ensure,
+  package {  $fusioninventory::params::pkgfusion:
+    ensure => true,
   }
 
 }
