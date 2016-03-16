@@ -1,14 +1,41 @@
 {
-  "name": "esterniclos-fusioninventory",
-  "version": "1.2.2",
-  "author": "esterniclos",
-  "summary": "Installs and configures fusion inventory agents in Debian and Rhel. Required for glpi",
-  "license": "Apache 2.0",
-  "source": "https://github.com/esterniclos/esterniclos-fusioninventory",
-  "project_page": "https://github.com/esterniclos/esterniclos-fusioninventory",
-  "issues_url": "https://github.com/esterniclos/esterniclos-fusioninventory/issues",
-  "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
-  ]
+    "name": "esterniclos-fusioninventory",
+    "version": "1.2.3",
+    "author": "esterniclos",
+    "summary": "Installs and configures fusion inventory agents in Debian and Rhel. Required for glpi",
+    "license": "Apache 2.0",
+    "source": "https://github.com/esterniclos/esterniclos-fusioninventory",
+    "project_page": "https://github.com/esterniclos/esterniclos-fusioninventory",
+    "issues_url": "https://github.com/esterniclos/esterniclos-fusioninventory/issues",
+    "operatingsystem_support": [
+	{      "operatingsystemrelease":        "8"
+	},
+	{
+	    "operatingsystem": "Debian",
+	    "operatingsystemrelease": [
+		"6",
+		"7",
+		"8"
+	    ]
+	},
+	{
+	    "operatingsystem": "RedHat",
+	    "operatingsystemrelease": [
+		"5",
+		"6",
+		"7"
+	    ]
+	}
+    ],
+    "puppet_version": [
+	"2.7",
+	"3.0",
+	"3.1",
+	"3.2",
+	"3.3",
+	"3.4",
+	"3.5",
+	"3.6",
+	"3.7"
+    ]
 }
-
