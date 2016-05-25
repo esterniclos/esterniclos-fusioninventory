@@ -1,10 +1,18 @@
 #!/bin/bash
-
 #
 # File managed by puppet
 #
 # Do not edit
-
+<% if @no_proxy %>
+#
+# Remove proxy settings for this script
+#
+http_proxy=''
+https_proxy=''
+HTTP_PROXY=''
+HTTPS_PROXY=''
+<% end %>
+# To test this script, use --debug
 /usr/bin/fusioninventory-agent --server "http://<%= @glpiserver %>/glpi/plugins/fusioninventory/"
 
 

@@ -31,7 +31,6 @@ cron
 
 ### Beginning with fusioninventory
 
-
     puppet module install esterniclos-fusioninventory
 
 ## Usage
@@ -39,7 +38,25 @@ cron
   class { 'fusioninventory':
          glpiserver  => '192.168.1.2'
   }
-      
+
+Do not use proxy
+
+  class { 'fusioninventory':
+    cronscript_enable => true ,
+    no_proxy => false,
+    glpiserver  => '192.168.1.2'
+  }
+
+Use bash proxy
+
+  class { 'fusioninventory':
+    cronscript_enable => true ,
+    no_proxy => true,
+    glpiserver  => '192.168.1.2'
+  }
+
+
+
 ## Reference
 
 * class fusioninventory : Installs and configures
