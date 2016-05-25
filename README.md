@@ -71,5 +71,14 @@ Tested in Debian and Rhel
 
 ## Development
 
-https://github.com/esterniclos/esterniclos-fusioninventory
+Github repository
 
+   git clone https://github.com/esterniclos/esterniclos-fusioninventory fusioninventory
+
+Building module
+
+   sudo puppet module build . --verbose
+
+Testing json:
+
+   http://jsonlint.com/
