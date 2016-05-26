@@ -25,6 +25,10 @@
 	    ]
 	}
     ],
+    "dependencies": [
+	{ "name": "meltwater/cpan",
+	  "version_requirement": ">= 1.0.1" },
+    ],
     "puppet_version": [
 	"2.7",
 	"3.0",

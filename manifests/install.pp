@@ -15,7 +15,7 @@ inherits fusioninventory::params
     
     }
   else {
-    # Debian and ubuntu
+    # Debian and ubuntu nad rhel lower than 7
     package {  $fusioninventory::params::pkgfusion:
         ensure => true,
     }
