@@ -1,6 +1,6 @@
 {
     "name": "esterniclos-fusioninventory",
-    "version": "1.2.5",
+    "version": "1.2.6",
     "author": "esterniclos",
     "summary": "Installs and configures fusioninventory agents in Debian and Rhel. Required for glpi",
     "license": "Apache-2.0",

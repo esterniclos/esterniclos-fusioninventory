@@ -12,7 +12,10 @@ https_proxy=''
 HTTP_PROXY=''
 HTTPS_PROXY=''
 <% end %>
+
 # To test this script, use --debug
-/usr/bin/fusioninventory-agent --server "http://<%= @glpiserver %>/glpi/plugins/fusioninventory/"
+
+FUSION=$(whereis fusioninventory-agent | cut -d ' ' -f 2)
+$FUSION --server "http://<%= @glpiserver %>/glpi/plugins/fusioninventory/"
 
 
